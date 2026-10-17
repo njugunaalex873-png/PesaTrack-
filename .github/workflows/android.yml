@@ -54,10 +54,6 @@ jobs:
 
       - name: Sync Capacitor
         run: npx cap sync android
-        
-
-      - name: Sync Capacitor
-        run: npx cap sync android
 
       
       - name: Build APK
