@@ -1,0 +1,7 @@
+
+{
+  "appId": "com.pesatrack.app",
+  "appName": "PesaTrack",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
