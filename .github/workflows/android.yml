@@ -41,11 +41,14 @@ jobs:
       - name: Build web app
         run: npm run build
       
+      
       - name: Generate app icons
         run: |
-          npm install --save-dev @capacitor/assets
+          npm install --no-save --package-lock=false @capacitor/assets sharp
           mkdir -p assets
+          node -e "require('sharp')('pesatrack-icon.svg').resize(1024,1024).png().toFile('assets/icon.png').then(() => console.log('Icon PNG created'))"
           npx capacitor-assets generate --android
+          
           
 
       - name: Create Android project
