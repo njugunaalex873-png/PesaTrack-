@@ -1,0 +1,27 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#123b2b"/>
+      <stop offset="100%" stop-color="#020806"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00a85a"/>
+      <stop offset="100%" stop-color="#64ff70"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <circle cx="256" cy="190" r="115" fill="#ffffff" opacity=".04"/>
+  <rect x="142" y="76" width="228" height="228" rx="55" fill="#10291f" stroke="#286b47" stroke-width="3"/>
+  <path d="M190 120 H264 C310 120 333 147 333 181 C333 217 306 239 264 239 H235 V271 H190 Z" fill="#ffffff"/>
+  <path d="M235 158 H264 C281 158 291 166 291 181 C291 196 281 201 264 201 H235 Z" fill="#07130e"/>
+  <rect x="241" y="177" width="12" height="17" rx="2" fill="url(#green)"/>
+  <rect x="259" y="166" width="12" height="28" rx="2" fill="url(#green)"/>
+  <rect x="277" y="151" width="12" height="43" rx="2" fill="url(#green)"/>
+  <path d="M185 225 L231 205 L253 213 L306 157" fill="none" stroke="url(#green)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M284 157 L307 155 L306 178" fill="none" stroke="url(#green)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="256" y="356" text-anchor="middle" font-family="Arial,sans-serif" font-size="45" font-weight="700" fill="#ffffff">Pesa<tspan fill="#48e878">Track</tspan></text>
+  <text x="256" y="393" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" letter-spacing="3" fill="#d5e6dc">TRACK • SAVE • GROW</text>
+  <rect x="206" y="424" width="100" height="4" rx="2" fill="url(#green)"/>
+</svg>
+    
