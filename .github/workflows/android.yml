@@ -1,5 +1,5 @@
 
-name: Build PesaTrack Android APK
+name: Build PesaTrack Android APk
 
 on:
   workflow_dispatch:
