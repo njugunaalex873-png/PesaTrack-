@@ -40,6 +40,12 @@ jobs:
 
       - name: Build web app
         run: npm run build
+      - name: Generate app icons
+        run: |
+          npm install --save-dev @capacitor/assets
+          mkdir -p assets
+          cp pesatrack-icon.svg assets/icon.svg
+          npx capacitor-assets generate --android
 
       - name: Create Android project
         run: npx cap add android
