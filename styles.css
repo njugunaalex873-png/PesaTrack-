@@ -1,0 +1,171 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 18px;
+  background: #f3f8f5;
+  color: #183b2d;
+  font-family: Arial, sans-serif;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0 24px;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 15px;
+  background: #12805c;
+  color: white;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.eyebrow {
+  margin: 0 0 5px;
+  color: #12805c;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.balance-card {
+  padding: 24px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #12805c, #075b42);
+  color: white;
+  box-shadow: 0 8px 22px #12805c25;
+}
+
+.balance-card p {
+  font-size: 13px;
+}
+
+.balance-card h2 {
+  font-size: 34px;
+  overflow-wrap: anywhere;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.summary-grid div {
+  padding: 13px;
+  border-radius: 12px;
+  background: #ffffff20;
+  font-size: 12px;
+}
+
+.summary-grid strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.form-card {
+  margin-top: 22px;
+  padding: 20px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 4px 18px #183b2d0c;
+}
+
+.form-card h2,
+.transactions-section h2 {
+  font-size: 19px;
+}
+
+label {
+  display: block;
+  margin: 15px 0 7px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #dce8e0;
+  border-radius: 10px;
+  background: #fbfdfb;
+  font-size: 15px;
+}
+
+button {
+  padding: 14px;
+  border: none;
+  border-radius: 11px;
+  background: #12805c;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#transactionForm button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.transactions-section {
+  margin-top: 25px;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 14px;
+  background: white;
+  overflow-wrap: anywhere;
+}
+
+.transaction small {
+  display: block;
+  margin-top: 5px;
+  color: #7b8d82;
+}
+
+.income {
+  color: #12805c;
+}
+
+.expense {
+  color: #c44f3d;
+}
+
+.clear-btn {
+  margin: 5px 0;
+  padding: 9px 12px;
+  background: #c44f3d;
+  font-size: 12px;
+}
+
+footer {
+  padding: 25px 0;
+  color: #7b8d82;
+  font-size: 12px;
+  text-align: center;
+}
