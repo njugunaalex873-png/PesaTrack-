@@ -187,3 +187,31 @@ function setToday() {
 
 setToday();
 render();
+
+/* PesaTrack splash screen controller */
+(function () {
+  function hidePesaTrackSplash() {
+    const splash = document.getElementById("splash-screen");
+
+    if (splash) {
+      splash.classList.add("hide-splash");
+
+      setTimeout(function () {
+        splash.remove();
+      }, 500);
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener(
+      "DOMContentLoaded",
+      function () {
+        setTimeout(hidePesaTrackSplash, 1800);
+      },
+      { once: true }
+    );
+  } else {
+    setTimeout(hidePesaTrackSplash, 1800);
+  }
+})();
+
