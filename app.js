@@ -189,6 +189,7 @@ setToday();
 render();
 
 
+
 /* PesaTrack splash screen controller */
 (function () {
   function hidePesaTrackSplash() {
@@ -199,25 +200,19 @@ render();
     }
   }
 
+  function startSplashTimer() {
+    setTimeout(hidePesaTrackSplash, 2000);
+  }
+
   if (document.readyState === "loading") {
     document.addEventListener(
       "DOMContentLoaded",
-      hidePesaTrackSplash,
+      startSplashTimer,
       { once: true }
     );
   } else {
-    hidePesaTrackSplash();
+    startSplashTimer();
   }
 })();
 
-      "DOMContentLoaded",
-      function () {
-        setTimeout(hidePesaTrackSplash, 1800);
-      },
-      { once: true }
-    );
-  } else {
-    setTimeout(hidePesaTrackSplash, 1800);
-  }
-})();
 
