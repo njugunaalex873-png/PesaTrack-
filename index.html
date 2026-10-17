@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12805c">
+  <title>PesaTrack</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-mark">P</div>
+    <div>
+      <p class="eyebrow">YOUR MONEY, CLEARLY</p>
+      <h1>PesaTrack</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="balance-card">
+      <p>Total balance</p>
+      <h2 id="balance">KSh 0.00</h2>
+      <p>Income minus expenses</p>
+      <div class="summary-grid">
+        <div>Income <strong id="income">KSh 0.00</strong></div>
+        <div>Expenses <strong id="expenses">KSh 0.00</strong></div>
+      </div>
+    </section>
+
+    <section class="form-card">
+      <h2>Add transaction</h2>
+      <form id="transactionForm">
+        <label for="type">Transaction type</label>
+        <select id="type">
+          <option value="expense">Expense</option>
+          <option value="income">Income</option>
+        </select>
+
+        <label for="description">Description</label>
+        <input id="description" maxlength="70"
+          placeholder="e.g. Lunch or allowance" required>
+
+        <label for="amount">Amount (KSh)</label>
+        <input id="amount" type="number" min="0.01"
+          step="0.01" placeholder="0.00" required>
+
+        <label for="date">Date</label>
+        <input id="date" type="date" required>
+
+        <button type="submit">+ Save transaction</button>
+      </form>
+      <p id="message" role="status"></p>
+    </section>
+
+    <section class="transactions-section">
+      <h2>Recent transactions</h2>
+      <button id="clearBtn" class="clear-btn" type="button">
+        Clear all
+      </button>
+      <div id="transactionList"></div>
+      <p id="emptyState">No transactions yet. Add your first one above.</p>
+    </section>
+  </main>
+
+  <footer>Your financial data stays on this device.</footer>
+  <script src="app.js"></script>
+</body>
+                                                     </html>
+                                                     
